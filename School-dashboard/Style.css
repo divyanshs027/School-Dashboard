@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+    position:absolute;
+    background-color: #dfdfdf;
+}
+
+.nav-bar{
+    position:sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1F3F49;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    padding: 15px;
+    
+}
+.nav-bar-cantent ul li{
+ text-decoration: none;
+ display: inline-block;
+}
+
+.nav-bar-cantent a{
+    text-decoration: none;
+    color: azure;
+    padding: 17px;
+}
+.nav-bar-cantent ul li a:hover{
+    cursor: pointer;
+    background-color: #1a8aac;
+    
+}
+.nav-bar-searchBox{
+    display: flex;
+}
+.search-bar{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 260px;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    padding: 9px;
+}
+.button{
+    width: 80px;
+    height: 30px;
+    background-color: #d6230c;
+    color: azure;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #ff1e00;
+}
+
+
+.main{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+/* sideBar  */
+.side-bar-text{
+    padding: 20px;
+}
+
+.side-bar{
+    background-color: #215fa5;
+    color: white;
+    width: 250px;
+    height: 100vh;
+}
+.side-bar-content{
+    display: flex;
+}
+.side-bar-cantent ul li{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.side-bar-cantent ul li a{
+    text-decoration: none;
+    padding: 20px;
+    padding-inline: 30%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: 700;
+    
+}
+.side-bar-cantent ul li a:hover{
+    cursor: pointer;
+    background-color: #1a8aac;
+}
+
+/* Main Content / Article */
+.article{
+    color: black;
+    padding: 14px 35px;
+}
+.article-text{
+    margin: 0;
+    padding: 0;
+}
+
+/* .article-main-contect-1content 1 */
+.article-main-contect-1{
+    display: flex;
+}
+.content-1{
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 22px;
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inner-text h2{
+    padding:14px ;
+    color: #f51d01;
+}
+.image{
+    margin: 5px;
+    width: 150px;
+    height: 120px;
+}
+
+
+/* main-content-2 */
+.article-main-contect-2{
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-2{
+    background-color: #f5f5f5;
+    
+    padding: 20px;
+    margin: 22px;
+    width: 400px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.text{
+    font-size: 40px;
+}
+.inner-text-2{
+    display: flex;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    /* padding: 10px; */
+}
+.pie {
+    margin-left: 50px;
+    width: 160px;
+    height: 160px;
+    background-image: conic-gradient( rgb(236, 222, 16) 74%,  rgba(229, 255, 0, 0.664) 24%);
+    border-radius: 50%
+  }
+  .pie-2 {
+    margin-left: 50px;
+    width: 160px;
+    height: 160px;
+    background-image: conic-gradient( rgb(9, 104, 212) 94%,  rgb(71, 143, 224) 4%);
+    border-radius: 50%
+  }
+  .pie-3 {
+    margin-left: 10px;
+    width: 160px;
+    height: 160px;
+    background-image: conic-gradient( rgb(189, 0, 79) 84%,  rgb(255, 173, 241) 11%);
+    border-radius: 50%
+  }
+.h2{
+    color: red;
+}
+
+/* Footer */
+.footer{
+    background-color:#3C6478;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+.footer-content ul li{
+    display: inline;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: azure;
+    padding-left: 27px;
+    font-size: 20px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .container{
+        position: absolute;
+        width: 100vw; ;
+    }
+    .nav-bar ul{
+        display: none;
+    }
+    .nav-bar-cantent ul{
+        flex-direction: column;
+       
+    } 
+    .side-bar {
+        /* position: sticky;
+        top: 55px; */
+        height: auto;
+        
+    }
+    
+
+    .article-main-contect-1, .article-main-contect-2 { 
+        flex-direction: column;
+    }
+
+    .content-1, .content-2 {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar-cantent ul  {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-bar-searchBox
+    .button {
+        flex-direction: column;
+        width: 40%;
+    }
+     .side-bar {
+        position: fixed; 
+        width: 100%;
+        text-align: center;
+        
+    }
+    .article-text{
+        margin-top: 430px;
+    }
+
+    .article-main-contect-1{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article-main-contect-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .content-1, .content-2 {
+        flex-basis: 100%;
+
+    }
+
+    .nav-bar-logo img {
+        max-width: 100px;
+    }
+
+    .nav-bar-searchBox input {
+        width: 100%;
+    }
+
+    .article {
+        padding: 10px;
+       
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        position: absolute;
+        width: 480px;
+    }
+    .nav-bar {
+        flex-direction: column;
+       
+    }
+
+    .nav-bar-cantent ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .side-bar{
+        position: absolute;
+        width: 100%;
+       
+    }
+    .article-main-contect-2{
+        text-align: center;
+        width: 70%;
+        /* margin: 30px; */
+    }
+
+    .nav-bar-searchBox input, .nav-bar-searchBox button {
+       display: none;
+    }
+
+     .content-1, .content-2 {
+        flex-basis: 100%;
+    } 
+}
