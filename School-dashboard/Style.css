@@ -76,7 +76,6 @@
 
 .main{
     display: flex;
-    /* flex-wrap: wrap; */
 }
 
 /* sideBar  */
@@ -150,7 +149,7 @@
 
 /* main-content-2 */
 .article-main-contect-2{
-    /* overflow: hidden; */
+   
     display: flex;
     flex-wrap: wrap;
 }
@@ -172,7 +171,6 @@
     color: black;
     margin: 10px;
     padding: 10px;
-    /* padding: 10px; */
 }
 .pie {
     margin-left: 50px;
@@ -232,8 +230,6 @@
        
     } 
     .side-bar {
-        /* position: sticky;
-        top: 55px; */
         height: auto;
         
     }
@@ -330,7 +326,6 @@
     .article-main-contect-2{
         text-align: center;
         width: 70%;
-        /* margin: 30px; */
     }
 
     .logo{
