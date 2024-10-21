@@ -7,6 +7,11 @@
     position:absolute;
     background-color: #dfdfdf;
 }
+.logo{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
 
 .nav-bar{
     position:sticky;
@@ -328,6 +333,11 @@
         /* margin: 30px; */
     }
 
+    .logo{
+        width: 80px;
+        height: 35px;
+        
+    }
     .nav-bar-searchBox input, .nav-bar-searchBox button {
        display: none;
     }
